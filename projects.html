@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Andreina Ortiz Acosta</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        .project {
+            padding: 50px 20px;
+            border-top: 1px solid #eeeeee;
+        }
+
+        .project-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .project h2 {
+            margin-bottom: 15px;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .project h3 {
+            margin-bottom: 15px;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .project p {
+            margin-bottom: 25px;
+            color: #444444;
+            line-height: 1.8;
+        }
+
+        .slides-viewer {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+            background-color: #f5f5f5;
+        }
+
+        .capstone-references {
+            margin-top: 40px;
+        }
+
+        .document-viewer {
+            display: block;
+            width: 100%;
+            height: 850px;
+            border: 1px solid #dddddd;
+            background-color: #f5f5f5;
+        }
+
+        .nav-links a[aria-current="page"] {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+
+        /* FLYER COLLAGE */
+
+        .flyers-section {
+            background-color: #f8f3ee;
+        }
+
+        .flyers-section h2 {
+            margin-bottom: 30px;
+        }
+
+        .flyer-collage {
+            columns: 3;
+            column-gap: 24px;
+        }
+
+        .flyer {
+            display: inline-block;
+            width: 100%;
+            margin: 0 0 24px;
+            padding: 9px;
+            break-inside: avoid;
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 5px 16px rgba(50, 30, 20, 0.12);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .flyer:nth-child(3n + 1) {
+            transform: rotate(-1deg);
+        }
+
+        .flyer:nth-child(3n + 2) {
+            transform: rotate(1deg);
+        }
+
+        .flyer:hover,
+        .flyer:focus-visible {
+            transform: rotate(0deg) translateY(-4px);
+            box-shadow: 0 10px 24px rgba(50, 30, 20, 0.2);
+        }
+
+        .flyer:focus-visible {
+            outline: 3px solid #946b55;
+            outline-offset: 4px;
+        }
+
+        .flyer img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+        }
+
+        @media screen and (max-width: 900px) {
+            .flyer-collage {
+                columns: 2;
+            }
+        }
+
+        @media screen and (max-width: 650px) {
+            .project {
+                padding: 35px 15px;
+            }
+
+            .project h2 {
+                font-size: 24px;
+            }
+
+            .project h3 {
+                font-size: 21px;
+            }
+
+            .document-viewer {
+                height: 650px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .flyer-collage {
+                columns: 1;
+            }
+
+            .flyer:nth-child(n) {
+                transform: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .flyer {
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="site-logo">
+                Andreina Ortiz Acosta
+            </a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="main-nav"
+                id="main-nav"
+                aria-label="Main navigation"
+            >
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="experience.html">Experience</a>
+                    </li>
+                    <li>
+                        <a href="interests.html">Interests</a>
+                    </li>
+                    <li>
+                        <a href="projects.html" aria-current="page">
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="social-media.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE BANNER -->
+        <section class="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+                <h1>Ideas into practice</h1>
+            </div>
+        </section>
+
+        <!-- CAPSTONE SLIDES AND REFERENCES -->
+        <section class="project">
+            <div class="project-container">
+
+                <h2>Digital Capstone Project — Trial by TikTok</h2>
+
+                <p>
+                    How social media shapes public perception
+                    of crime and trials.
+                </p>
+
+                <iframe
+                    class="slides-viewer"
+                    src="https://www.canva.com/design/DAHadDFemmM/kin00bVS2fpQq6A0kWXIig/view?embed"
+                    title="Trial by TikTok capstone presentation"
+                    allow="fullscreen"
+                    allowfullscreen
+                ></iframe>
+
+                <section class="capstone-references">
+                    <h3>Capstone References</h3>
+
+                    <p>
+                        Sources and references for my
+                        Trial by TikTok presentation.
+                    </p>
+
+                    <iframe
+                        class="document-viewer"
+                        src="./DCIM%20Capstone%20(2).pdf"
+                        title="Trial by TikTok capstone references"
+                    ></iframe>
+                </section>
+
+            </div>
+        </section>
+
+        <!-- FLYER COLLAGE -->
+        <section class="project flyers-section">
+            <div class="project-container">
+
+                <h2>Flyers</h2>
+
+                <div class="flyer-collage">
+
+                    <a class="flyer" href="./flyer-1.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-1.jpg"
+                            alt="The Last Dance — Bachata Club murder mystery flyer"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-2.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-2.jpg"
+                            alt="Comenzando Bailando — Rutgers Bachata Club event flyer"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-3.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-3.jpg"
+                            alt="Bachata Club 2024 executive board poster"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-4.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-4.jpg"
+                            alt="The Triad of Resilience — Sigma Lambda Gamma promotional flyer"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-5.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-5.jpg"
+                            alt="Celebrating Juneteenth — Bachata Club graphic"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-6.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-6.jpg"
+                            alt="7 Días de Amor Prohibido — celebrating ten years of Bachata Club"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-7.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-7.jpg"
+                            alt="Boo-Chata Bake Sale — Halloween fundraiser flyer"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-8.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-8.jpg"
+                            alt="Happy Father's Day — Sigma Lambda Gamma graphic"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-9.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-9.jpg"
+                            alt="Rep Your Flag — cultural celebration event flyer"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-10.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-10.jpg"
+                            alt="Psi Alpha's 25th Chapterversary celebration graphic"
+                            loading="lazy"
+                        >
+                    </a>
+
+                    <a class="flyer" href="./flyer-11.jpg"
+                       target="_blank" rel="noopener noreferrer">
+                        <img
+                            src="./flyer-11.jpg"
+                            alt="Spooky Pintura — Bachata Club Halloween painting event flyer"
+                            loading="lazy"
+                        >
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LEADERSHIP PDF -->
+        <section class="project">
+            <div class="project-container">
+
+                <h2>Personal Leadership Development Plan</h2>
+
+                <p>
+                    A reflection on my leadership values,
+                    organizational culture, and professional goals
+                    for Leadership in Digital Context.
+                </p>
+
+                <iframe
+                    class="document-viewer"
+                    src="./Personal%20Leadership%20Development%20Plan%20-Andreina%20Ortiz.pdf"
+                    title="Personal Leadership Development Plan"
+                    loading="lazy"
+                ></iframe>
+
+            </div>
+        </section>
+
+        <!-- SMART HOME ECOSYSTEMS PDF -->
+        <section class="project">
+            <div class="project-container">
+
+                <h2>The Disruptive Rise of Smart Home Ecosystems</h2>
+
+                <p>
+                    A paper for Digital Tech &amp; Disruptive Change
+                    exploring connected devices and the changing
+                    role of technology in the home.
+                </p>
+
+                <iframe
+                    class="document-viewer"
+                    src="./EDTP%20-%20Andreina%20Ortiz%20(1).pdf"
+                    title="The Disruptive Rise of Smart Home Ecosystems"
+                    loading="lazy"
+                ></iframe>
+
+            </div>
+        </section>
+
+        <!-- PORTFOLIO DOCUMENT PDF -->
+        <section class="project">
+            <div class="project-container">
+
+                <h2>Portfolio Content Draft</h2>
+
+                <p>
+                    The biographical and website content prepared
+                    for my personal portfolio.
+                </p>
+
+                <iframe
+                    class="document-viewer"
+                    src="./Untitled%20document.pdf"
+                    title="Portfolio Content Draft"
+                    loading="lazy"
+                ></iframe>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>
+            &copy; 2026 Andreina Ortiz Acosta.
+            All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>
