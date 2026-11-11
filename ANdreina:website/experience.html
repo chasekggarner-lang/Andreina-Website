@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience | Andreina Ortiz Acosta</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .site-header {
+            flex-shrink: 0;
+        }
+
+        .resume-page {
+            flex: 1;
+            min-height: 0;
+        }
+
+        .resume-viewer {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .nav-links a[aria-current="page"] {
+            text-decoration: underline;
+            text-underline-offset: 6px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="index.html" class="site-logo">
+                Andreina Ortiz Acosta
+            </a>
+
+            <button
+                class="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+                aria-controls="main-nav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav
+                class="main-nav"
+                id="main-nav"
+                aria-label="Main navigation"
+            >
+                <ul class="nav-links">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="experience.html" aria-current="page">
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="interests.html">Interests</a>
+                    </li>
+                    <li>
+                        <a href="projects.html">Projects</a>
+                    </li>
+                    <li>
+                        <a href="social-media.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="resume-page">
+        <iframe
+            class="resume-viewer"
+            src="./Andreina%20Ortiz%20Acosta%20Resume.pdf"
+            title="Andreina Ortiz Acosta Resume"
+        ></iframe>
+    </main>
+
+</body>
+</html>
